@@ -7,7 +7,7 @@ This is a temporary script file.
 
 import numpy as np
 
-entradas = np.array([1, 7, 5])
+entradas = np.array([-1, 7, 5])
 pesos = np.array([0.8, 0.1, 0])
 
 
