@@ -17,10 +17,12 @@ def stepFucntion(soma):
     if(soma >= 1):
         return 1
     return 0
+
 def calcularSaida(registro):
     s = registro.dot(pesos)
     return stepFucntion(s)
 
+#encontra os pesos ideais 
 def treinar():
     erroTotal = 1
     while (erroTotal !=0):
@@ -35,4 +37,5 @@ def treinar():
         print('Total de erros: ' + str(erroTotal))
 
 treinar()
+print("Rede Neural treinada")
     
