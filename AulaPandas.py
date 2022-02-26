@@ -9,7 +9,9 @@ import statistics
 import numpy as np
 import pandas as pd
 
-dados = [214, 222, 215, 218, 206, 238, 217, 213, 196, 234, 195, 205, 249]
+dados = [9, 10, 13, 12, 9, 14, 9, 13, 10, 14, 10, 13, 11, 11, 9, 12, 13, 13,
+         
+12, 12, 13, 10, 11, 11, 11]
 
 print('ROL', dados)
 
@@ -23,9 +25,8 @@ print("O Desvio padrao foi: ", statistics.stdev(dados))
 print("A variancia foi: ", statistics.variance(dados),"\n")
 
 #usando a biblioteca pandas
-example_series =  pd.Series([9, 10, 13, 12, 9, 14, 9, 13, 10, 14, 10, 13, 11, 11, 9, 12, 13, 13,
-         
-12, 12, 13, 10, 11, 11, 11])
+example_series =  pd.Series([214, 222, 215, 218, 206, 238, 217, 213,
+                             196, 234, 195, 205, 249])
 
 print('A Média dos Dados foi: ', example_series.mean())
 print('A Mediana dos Dados foi: ', example_series.median())
@@ -40,7 +41,7 @@ size, scale = 1000,10
 import matplotlib.pyplot as plt
 
 commutes = pd.Series(np.random.gamma(scale, size=size)**1.5)
-commutes.plot.hist(grid=True, bins=20, rwidth=0.9, color='#607c8e')
+commutes.plot.hist(grid=True, bins=20, rwidth=0.9, color='#597586')
 plt.title('Commute Times for 1,000 Commuters')
 plt.xlabel('Counts')
 plt.ylabel('Commute Time')
