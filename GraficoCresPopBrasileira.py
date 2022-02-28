@@ -23,8 +23,8 @@ for i in range(len(dados)):
 plt.bar(x, y, color="#87CEFA")
 plt.plot(x, y, color="#00008b", linestyle="-")
 
-plt.title("Crescimento Populacional Brasileiro")
+plt.title("Vitórias do Flamengo no Brasileiro")
 plt.xlabel("Ano")
-plt.ylabel("População em milhões")
+plt.ylabel("Vitórias")
 #plt.show()
-plt.savefig("Grafico População.pdf")
+plt.savefig("Grafico_Fla.pdf")
